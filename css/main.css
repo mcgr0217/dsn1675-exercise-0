@@ -1,10 +1,20 @@
+dl {
+    border: 1px solid red;
+    /* Overflow hidden can be used as a clearfix, It remains the <dl> to wrap around its floated children
+    */
+    overflow: hidden;
+}
+
 dt {
     float: left;
     clear: left; /* Force the dt underneath anything floated left */
+    width: 8rem; /* width moves it over to the side */
 }
 
 dd {
     float: left;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -15,4 +25,8 @@ img {
     margin: 1.3em auto;
     max-width: 95%;
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+}
+
+header p {
+    font color: red;
 }
